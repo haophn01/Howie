@@ -1,7 +1,10 @@
+import {Typography} from '@mui/material';
 export default function Home() {
     return (
         <div>
-            <h1>This is my home page</h1>
+            <Typography variant="body1"> 
+                    Welcome to my home page 
+            </Typography>
         </div>
     )
 } 
