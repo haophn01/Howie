@@ -1,7 +1,8 @@
+import { Typography } from '@mui/material';
 export default function Project() {
     return (
         <div>
-            <h1>This is my project pages</h1>
+            <Typography variant="body1"> Welcome to my project page </Typography>
         </div>
     )
 }

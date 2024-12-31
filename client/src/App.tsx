@@ -2,9 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Project from './pages/Project';
-import { Avatar, Typography } from '@mui/material';
-
-
+import Landing from './pages/Landing';
 
 export default function App() {
     return (
@@ -19,22 +17,13 @@ export default function App() {
                 <Link to="/Project" style={styles.link}>Project</Link>
             </div>
             <Routes>
+                <Route path="/" element={<Landing />} />
                 <Route path="/Home" element={<Home />} />
                 <Route path="/AboutMe" element={<AboutMe />} />
                 <Route path="/Project" element={<Project />} />
             </Routes>
         </Router>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-            <Avatar src="logo.svg" style={{
-                margin: '20px',
-                width: '500px',
-                height: '500px',
-            }}/>
-            <Typography variant = "body1">Shall you be my guest today?</Typography>
         </div>
-
-        </div>
-
     );
 };
 
