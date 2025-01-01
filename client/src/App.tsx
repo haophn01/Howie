@@ -4,6 +4,7 @@ import AboutMe from './pages/AboutMe';
 import Project from './pages/Project';
 import Landing from './pages/Landing';
 
+
 export default function App() {
     return (
         <div style ={{
