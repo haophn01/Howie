@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Navbar from './Components/Navbar';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Project from './pages/Project';
@@ -12,11 +13,7 @@ export default function App() {
             height: '100vh',
         }}>
         <Router>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '20px' }}>
-                <Link to="/Home" style={styles.link}>Home</Link>
-                <Link to="/AboutMe" style={styles.link}>About Me</Link>
-                <Link to="/Project" style={styles.link}>Project</Link>
-            </div>
+            <Navbar/>
             <Routes>
                 <Route path="/" element={<Landing />} />
                 <Route path="/Home" element={<Home />} />
@@ -28,13 +25,6 @@ export default function App() {
     );
 };
 
-const styles = {
-    link: {
-        margin: '0 15px',
-        color: 'black',
-        textDecoration: 'none',
-        fontSize: '1.2rem',
-    },
-};
+
 
 

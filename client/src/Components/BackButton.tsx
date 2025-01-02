@@ -1,10 +1,14 @@
-import {IconButton, Link} from "@mui/material";
+import { IconButton, Link } from "@mui/material";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
-export default function BackButton() {
+export interface BackButtonProps {
+    name: string
+}
+
+export default function BackButton({ name }: BackButtonProps) {
     return (
         <IconButton aria-label="Back">
-            <Link href= "/"><ArrowBackIosIcon/></Link>
+            <Link href="/"><ArrowBackIosIcon /> {name}</Link>
         </IconButton>
     )
 }

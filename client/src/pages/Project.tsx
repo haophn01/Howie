@@ -3,7 +3,7 @@ import BackButton from '../Components/BackButton';
 export default function Project() {
     return (
         <div>
-            <BackButton/>
+            <BackButton name = "About Me"/>
             <Typography variant="body1"> 
                 Welcome to my project page 
             </Typography>
