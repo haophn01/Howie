@@ -1,7 +1,5 @@
-import { Typography, Box, Grid } from '@mui/material';
+import { Typography, Box} from '@mui/material';
 import BackButton from '../Components/BackButton';
-import { FormatAlignJustify, FullscreenExit } from '@mui/icons-material';
-import { flattenDiagnosticMessageText } from 'typescript';
 
 export default function AboutMe() {
     return (
