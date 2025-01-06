@@ -1,6 +1,7 @@
 import { Typography, Box } from '@mui/material';
 import HTMLFlipBook from 'react-pageflip';
 import BackButton from '../Components/BackButton';
+import PageCover from '../Components/PageCover';
 export default function Project() {
     return (
         <Box style={{
@@ -42,18 +43,18 @@ export default function Project() {
                 <HTMLFlipBook 
                 width={600} 
                 height={500} 
-                className=""  
+                className="demoPage"  
                 maxWidth={1000} 
                 minWidth={700} 
                 maxHeight={1000} 
                 minHeight={500}
-                size="fixed"
+                size="stretch"
                 startPage={0}
                 drawShadow={true}
                 flippingTime={1000}
                 useMouseEvents={true}
                 swipeDistance={50}
-                showCover={false}
+                showCover={true}
                 mobileScrollSupport={false}
                 clickEventForward={true}
                 usePortrait={true}
@@ -67,6 +68,7 @@ export default function Project() {
                     boxShadow: '0 0 20px rgba(0,0,0,0.3)',
                 }}
             >
+                <div><PageCover name="Book Title" image='client/public/logo512.png' /></div>
                 <div className="demoPage">Page 1</div>
                 <div className="demoPage">Page 2</div>
                 <div className="demoPage">Page 3</div>
