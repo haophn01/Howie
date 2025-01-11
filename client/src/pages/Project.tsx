@@ -1,7 +1,7 @@
 import { Typography, Box } from '@mui/material';
-import HTMLFlipBook from 'react-pageflip';
+// import HTMLFlipBook from 'react-pageflip';
 import BackButton from '../Components/BackButton';
-import PageCover from '../Components/PageCover';
+// import PageCover from '../Components/PageCover';
 export default function Project() {
     return (
         <Box style={{
@@ -40,7 +40,14 @@ export default function Project() {
                 display: 'flex',
                 flexDirection: 'column',
             }}>
-                <HTMLFlipBook 
+                
+                
+            </Box>
+        </Box>
+    )
+}
+
+{/* <HTMLFlipBook 
                 width={600} 
                 height={500} 
                 className="demoPage"  
@@ -73,9 +80,4 @@ export default function Project() {
                 <div className="demoPage">Page 2</div>
                 <div className="demoPage">Page 3</div>
                 <div className="demoPage">Page 4</div>
-            </HTMLFlipBook>
-                
-            </Box>
-        </Box>
-    )
-}
+            </HTMLFlipBook> */}
